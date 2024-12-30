@@ -49,7 +49,7 @@ for i in range(total_paginas):
 
 # Save to JSON
 try:
-    with open("recebimentos/recebimentos.json", "w", encoding="utf-8") as json_file:
+    with open("gestao_click_api/recebimentos/recebimentos.json", "w", encoding="utf-8") as json_file:
         json.dump(result, json_file, ensure_ascii=False, indent=4)
 except Exception as e:
     print(f"Error saving JSON: {e}")
